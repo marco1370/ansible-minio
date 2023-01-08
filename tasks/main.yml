@@ -1,0 +1,6 @@
+---
+- include: minio.yml
+  when: install_minio
+
+- include: nginx.yml
+  when: install_nginx

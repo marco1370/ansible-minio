@@ -1,0 +1,6 @@
+# Local export path.
+MINIO_VOLUMES="{{ minio_volumes | join(' ') }}"
+# Use if you want to run Minio on a custom port.
+MINIO_OPTS="--address {{ minio_listen_address }}:{{ minio_port }}"
+MINIO_ACCESS_KEY={{ minio_access_key }}
+MINIO_SECRET_KEY={{ minio_secret_key }}
